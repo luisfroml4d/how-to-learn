@@ -109,6 +109,10 @@
   padding-bottom: 30px;
 }
 
+.two-columns__paragraph:last-child {
+  padding-bottom: 0;
+}
+
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
@@ -234,6 +238,8 @@
 
 .section-title_theme_dark {
   color: white;
+  position: relative;
+  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
