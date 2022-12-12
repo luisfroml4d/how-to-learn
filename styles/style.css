@@ -329,7 +329,9 @@
   font-weight: 600;
 }
 
-.footer__columns-links {
+.footer__column-links {
+  padding-left: 0px;
+  list-style-type: none;
   padding-top: 20px;
   padding-bottom: 16px;
 }
@@ -351,12 +353,4 @@
   width: 16px;
   height: 16px;
   padding-right: 10px;
-}
-
-li {
-  list-style-type: none;
-}
-
-ul {
-  padding-left: 0;
 }
