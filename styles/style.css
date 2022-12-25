@@ -85,10 +85,13 @@
   width: 568px;
   height: 568px;
   background-color: #2f80ed;
+}
+
+.rotation {
   animation: rotation 20s infinite;
 }
 
-.descriprion {
+.description {
   display: flex;
   justify-content: center;
   padding-top: 100px;
@@ -444,7 +447,6 @@
   z-index: 0;
   background-image: url(../images/kaufman-triangle.svg);
   background-size: cover;
-  animation: rotation 20s infinite;
 }
 
 .resources {
