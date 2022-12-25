@@ -9,6 +9,15 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .header {
   position: relative;
   height: 100vh;
@@ -16,6 +25,7 @@
   max-height: 756px;
   display: flex;
   background-color: #f2f2f2;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -54,6 +64,11 @@
   color: #2f80ed;
 }
 
+.header__link:hover {
+  opacity: 0.5;
+  transition: ease 0.1s;
+}
+
 .header__main-illustration {
   position: absolute;
   right: 0;
@@ -70,6 +85,7 @@
   width: 568px;
   height: 568px;
   background-color: #2f80ed;
+  animation: rotation 20s infinite;
 }
 
 .descriprion {
@@ -82,7 +98,7 @@
   width: 80%;
   display: flex;
   justify-content: space-between;
-
+  margin: 0 auto;
 }
 
 .two-columns__brief {
@@ -117,6 +133,83 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
+}
+
+.techniques {
+  padding-top: 100px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cards {
+  margin: 0 auto;
+  width: 920px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.cards__item {
+  padding-top: 60px;
+  padding-right: 100px;
+  width: 240px;
+}
+
+.cards__item:nth-of-type(3n) {
+  padding-right: 0px;
+}
+
+.cards__image {
+  width: 160px;
+  min-height: 160px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 100%;
+}
+
+.cards__title {
+  margin: 0;
+  padding-top: 43px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cards__description {
+  margin: 0;
+  padding-top: 16px;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.video {
+  padding-top: 100px;
+}
+
+.video__iframes {
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.video__iframe {
+  position: relative;
+  width: 565px;
+  height: 315px;
+  border: 0;
+  bottom: -50px;
+}
+
+.oakley {
+  padding-top: 160px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
 }
 
 .digits {
@@ -172,6 +265,80 @@
   font-weight: normal;
 }
 
+.khan {
+  padding-top: 105px;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.khan__quote {
+  margin: 0;
+  width: 790px;
+  padding-top: 50px;
+  padding-bottom: 36px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quote-author {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.khan__qoute-author-subline {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 68px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.book-container {
+  display: flex;
+}
+
+.book-pic {
+  width: 608px;
+  min-height: 620px;
+}
+
+.buy-link {
+  margin: 0;
+  padding-left: 48px;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.buy-link:hover {
+  opacity: 0.5;
+  transition: ease 0.1s;
+}
+
 .feynman {
   position: relative;
   background-color: #f2f2f2;
@@ -212,6 +379,11 @@
   font-weight: normal;
   text-decoration: none;
   color: #2f80ed;
+}
+
+.feynman__link:hover {
+  opacity: 0.5;
+  transition: ease 0.1s;
 }
 
 .feynman__picture {
@@ -272,6 +444,35 @@
   z-index: 0;
   background-image: url(../images/kaufman-triangle.svg);
   background-size: cover;
+  animation: rotation 20s infinite;
+}
+
+.resources {
+  padding-top: 100px;
+  padding-bottom: 217px;
+}
+
+.resources__logo-zone {
+  margin: 0 auto;
+  padding-top: 80px;
+  width: 1100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.resources__link {
+  width: 270px;
+  min-height: 38px;
+  display: flex;
+}
+
+.resources__link:hover {
+  opacity: 0.5;
+  transition: ease 0.1s;
+}
+
+.resources__logo {
+  margin: 0 auto;
 }
 
 .footer {
@@ -342,6 +543,11 @@
   font-weight: normal;
   text-decoration: none;
   color: white;
+}
+
+.footer__column-link:hover {
+  opacity: 0.5;
+  transition: ease 0.1s;
 }
 
 .footer__column_content_social {
