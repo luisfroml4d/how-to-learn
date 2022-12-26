@@ -1,3 +1,8 @@
+@import url(../feynman/__title/feynman__title.css);
+@import url(../feynman/__subtitle/feynman__subtitle.css);
+@import url(../feynman/__picture/feynman__picture.css);
+@import url(../feynman/__link/feynman__link.css);
+
 .feynman {
   position: relative;
   background-color: #f2f2f2;
