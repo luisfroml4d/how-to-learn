@@ -309,7 +309,7 @@
   font-weight: 600;
 }
 
-.khan__qoute-author-subline {
+.khan__quote-author-subline {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 68px;
@@ -318,16 +318,16 @@
   font-weight: normal;
 }
 
-.book-container {
+.khan__book-container {
   display: flex;
 }
 
-.book-pic {
+.khan__book-pic {
   width: 608px;
   min-height: 620px;
 }
 
-.buy-link {
+.khan__buy-link {
   margin: 0;
   padding-left: 48px;
   line-height: 42px;
@@ -337,7 +337,7 @@
   text-decoration: none;
 }
 
-.buy-link:hover {
+.khan__buy-link:hover {
   opacity: 0.5;
   transition: ease 0.1s;
 }

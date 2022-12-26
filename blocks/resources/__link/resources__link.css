@@ -1,0 +1,10 @@
+.resources__link {
+  width: 270px;
+  min-height: 38px;
+  display: flex;
+}
+
+.resources__link:hover {
+  opacity: 0.5;
+  transition: ease 0.1s;
+}
